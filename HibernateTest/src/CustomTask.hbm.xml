@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+    <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+     "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
+      
+     <hibernate-mapping>  
+      <class name="com.hib.CustomTask" table="main_table">  
+        <id name="task_id">  
+         <generator class="assigned"></generator>  
+        </id>  
+                
+        <property name="title"></property>  
+        <property name="start_date"></property>  
+        <property name="due_date"></property>  
+        <property name="status"></property>  
+        <property name="priority"></property>
+        <property name="description"></property>    
+        <property name="created_at"></property>  
+                
+      </class>  
+                
+     </hibernate-mapping>  
